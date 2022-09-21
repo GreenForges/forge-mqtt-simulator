@@ -1,60 +1,664 @@
 {
-    "BROKER_URL": "mqtt.eclipse.org",
+    "BROKER_URL": "localhost",
     "BROKER_PORT": 1883,
     "TOPICS": [
         {
-            "TYPE": "multiple",
-            "PREFIX": "lamp",
-            "RANGE_START": 1,
-            "RANGE_END": 2,
-            "TIME_INTERVAL": 4,
+            "TYPE": "single",
+            "PREFIX": "Utility_1/THP_1/AirTemperature",
+            "TIME_INTERVAL": 1,
             "RETAIN_PROBABILITY": 0.85,
             "DATA": [
                 {
-                    "NAME": "on",
-                    "TYPE": "bool"
-                },
-                {
                     "NAME": "temperature",
-                    "TYPE": "int",
-                    "MIN_VALUE": 2700,
-                    "MAX_VALUE": 6500,
-                    "MAX_STEP": 250
+                    "TYPE": "float",
+                    "MIN_VALUE": -40,
+                    "MAX_VALUE": 85,
+                    "MAX_STEP": 100
                 }
             ]
         },
         {
             "TYPE": "single",
-            "PREFIX": "air_quality",
-            "TIME_INTERVAL": 6,
+            "PREFIX": "Utility_1/CO2_1",
+            "TIME_INTERVAL": 1,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
-                    "NAME": "pollution_particles",
-                    "TYPE": "float",
-                    "MIN_VALUE": 0,
-                    "MAX_VALUE": 1,
-                    "MAX_STEP": 0.15
-                },
-                {
-                    "NAME": "alert",
-                    "TYPE": "bool"
+                    "NAME": "ppm",
+                    "TYPE": "int",
+                    "MIN_VALUE": 400,
+                    "MAX_VALUE": 2000,
+                    "MAX_STEP": 25
                 }
             ]
         },
         {
-            "TYPE": "list",
-            "PREFIX": "temperature",
-            "LIST": ["roof", "basement"],
-            "TIME_INTERVAL": 8, 
-            "RETAIN_PROBABILITY": 0.5,
+            "TYPE": "single",
+            "PREFIX": "Utility_1/THP_1/Humidity",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
-                    "NAME": "temperature",
-                    "TYPE": "float",
-                    "MIN_VALUE": 20,
-                    "MAX_VALUE": 55,
+                    "NAME": "percentage",
+                    "TYPE": "int",
+                    "MIN_VALUE": 0,
+                    "MAX_VALUE": 100,
                     "MAX_STEP": 3
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_1/THP_1/Pressure",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "CasingTemp",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "HighLevelFloatSwitch",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_1/Fan_1/Rotation",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_1/Fan_1/Speed",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_1/Fan_2/Rotation",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_1/Fan_2/Speed",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_1/Fan_3/Rotation",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_1/Fan_3/Speed",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_1/Light/1",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_1/Light/2",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_1/Light/3",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_1/Light/4",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_1/Light/5",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_2/Light/1",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_2/Light/2",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_2/Light/3",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_2/Light/4",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_2/Light/5",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Utility_1/SolenoidValve",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Lights/PPFD",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Lights/DLI",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/TankLevel_1",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/PH_1",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/EC_1",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/Temperature_1",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/GlobeValve/Position",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/InletValve/Position",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/OutletValve/Position",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/InletFilter",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/OutletFiler",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/DissolvedOxygen",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/OxidationReductionPotential",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/FlowSensor",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/Dosing_1",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "/Nutrients_1/DuctFan",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "/Nutrients_1/AirPump",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/InletValve",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/OutletValve",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/GlobeValve",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "Nutrients_1/globe/Flow",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hPa",
+                    "TYPE": "int",
+                    "MIN_VALUE": 300,
+                    "MAX_VALUE": 1100,
+                    "MAX_STEP": 1
                 }
             ]
         }
