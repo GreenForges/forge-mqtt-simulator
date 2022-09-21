@@ -1,13 +1,10 @@
-# MQTT Simulator
+# Forge MQTT Simulator
 
-Easy-to-configure MQTT simulator written in [Python 3](https://www.python.org/) to simulate the sending of JSON objects from sensors or devices to a broker.
+Easy-to-configure Forge MQTT simulator to simulate the sending of JSON objects from sensors or devices to a broker for development purpose.
 
 [Features](#features) •
 [Getting Started](#getting-started) •
 [Configuration](#configuration) •
-[Authors](#authors)
-
-![Simulator Running](images/simulator-running.gif)
 
 ## Features
 
@@ -30,12 +27,12 @@ To install all dependencies with a virtual environment:
 ```shell
 python3 -m venv venv
 source venv/bin/activate
-pip3 install -r requirements.txt
+pip3 install
 ```
 
 #### Running
 
-The default simulator settings can be changed in the `config/settings.json` file.
+The settings can be changed in the `config/settings.json` file.
 
 ```shell
 python3 mqtt-simulator/main.py
@@ -116,8 +113,3 @@ python3 mqtt-simulator/main.py -f <path/settings.json>
     | `MIN_VALUE` | number | Minimum value that the property can assume | If `TYPE` is different from `"bool"` |
     | `MAX_VALUE` | number | Maximum value that the property can assume | If `TYPE` is different from `"bool"` |
     | `MAX_STEP` | number | Maximum change that can be applied to the property from a published data to the next | If `TYPE` is different from `"bool"` |
-
-## Authors
-
-[![DamascenoRafael](https://github.com/DamascenoRafael.png?size=70)](https://github.com/DamascenoRafael)
- [![Maasouza](https://github.com/Maasouza.png?size=70)](https://github.com/Maasouza)
