@@ -4,7 +4,7 @@ from simulator import Simulator
 
 def default_settings():
     base_folder = Path(__file__).resolve().parent.parent
-    settings_file = base_folder / 'config/settings.json'
+    settings_file = base_folder / 'config/forge-settings.json'
     return settings_file
 
 def is_valid_file(parser, arg):
