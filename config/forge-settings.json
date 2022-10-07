@@ -4,42 +4,27 @@
     "TOPICS": [
         {
             "TYPE": "single",
-            "PREFIX": "Utility_1/THP_1/AirTemperature",
+            "PREFIX": "greenforge/uuid/utility1/airtemperature",
             "TIME_INTERVAL": 1,
             "RETAIN_PROBABILITY": 0.85,
             "DATA": [
                 {
-                    "NAME": "temperature",
+                    "NAME": "celsius",
                     "TYPE": "float",
                     "MIN_VALUE": -40,
                     "MAX_VALUE": 85,
-                    "MAX_STEP": 100
+                    "MAX_STEP": 1
                 }
             ]
         },
         {
             "TYPE": "single",
-            "PREFIX": "Utility_1/CO2_1",
+            "PREFIX": "greenforge/uuid/utility1/humidity",
             "TIME_INTERVAL": 1,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
-                    "NAME": "ppm",
-                    "TYPE": "int",
-                    "MIN_VALUE": 400,
-                    "MAX_VALUE": 2000,
-                    "MAX_STEP": 25
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Utility_1/THP_1/Humidity",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "percentage",
+                    "NAME": "relative humidity",
                     "TYPE": "int",
                     "MIN_VALUE": 0,
                     "MAX_VALUE": 100,
@@ -49,615 +34,300 @@
         },
         {
             "TYPE": "single",
-            "PREFIX": "Utility_1/THP_1/Pressure",
+            "PREFIX": "greenforge/uuid/utility1/co2",
             "TIME_INTERVAL": 1,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
-                    "NAME": "hPa",
+                    "NAME": "parts per million",
+                    "TYPE": "int",
+                    "MIN_VALUE": 400,
+                    "MAX_VALUE": 2000,
+                    "MAX_STEP": 25
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "greenforge/uuid/utility1/airpressure",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hecto pascals",
                     "TYPE": "int",
                     "MIN_VALUE": 300,
                     "MAX_VALUE": 1100,
+                    "MAX_STEP": 25
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "greenforge/uuid/utility1/casingtemperature",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "celsius",
+                    "TYPE": "int",
+                    "MIN_VALUE": -20,
+                    "MAX_VALUE": 50,
+                    "MAX_STEP": 0.25
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "greenforge/uuid/utility3/airtemperature",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "celsius",
+                    "TYPE": "float",
+                    "MIN_VALUE": -40,
+                    "MAX_VALUE": 85,
                     "MAX_STEP": 1
                 }
             ]
         },
         {
             "TYPE": "single",
-            "PREFIX": "CasingTemp",
+            "PREFIX": "greenforge/uuid/utility3/humidity",
             "TIME_INTERVAL": 1,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
-                    "NAME": "hPa",
+                    "NAME": "relative humidity",
+                    "TYPE": "int",
+                    "MIN_VALUE": 0,
+                    "MAX_VALUE": 100,
+                    "MAX_STEP": 3
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "greenforge/uuid/utility3/co2",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "parts per million",
+                    "TYPE": "int",
+                    "MIN_VALUE": 400,
+                    "MAX_VALUE": 2000,
+                    "MAX_STEP": 25
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "greenforge/uuid/utility3/airpressure",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hecto pascals",
                     "TYPE": "int",
                     "MIN_VALUE": 300,
                     "MAX_VALUE": 1100,
+                    "MAX_STEP": 25
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "greenforge/uuid/utility3/casingtemperature",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "celsius",
+                    "TYPE": "float",
+                    "MIN_VALUE": -20,
+                    "MAX_VALUE": 50,
+                    "MAX_STEP": 0.25
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "greenforge/uuid/utility6/airtemperature",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "celsius",
+                    "TYPE": "float",
+                    "MIN_VALUE": -40,
+                    "MAX_VALUE": 85,
                     "MAX_STEP": 1
                 }
             ]
         },
         {
             "TYPE": "single",
-            "PREFIX": "HighLevelFloatSwitch",
+            "PREFIX": "greenforge/uuid/utility6/humidity",
             "TIME_INTERVAL": 1,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
-                    "NAME": "hPa",
+                    "NAME": "relative humidity",
+                    "TYPE": "int",
+                    "MIN_VALUE": 0,
+                    "MAX_VALUE": 100,
+                    "MAX_STEP": 3
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "greenforge/uuid/utility6/co2",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "parts per million",
+                    "TYPE": "int",
+                    "MIN_VALUE": 400,
+                    "MAX_VALUE": 2000,
+                    "MAX_STEP": 25
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "greenforge/uuid/utility6/airpressure",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hecto pascals",
                     "TYPE": "int",
                     "MIN_VALUE": 300,
                     "MAX_VALUE": 1100,
+                    "MAX_STEP": 25
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "greenforge/uuid/utility6/casingtemperature",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "celsius",
+                    "TYPE": "float",
+                    "MIN_VALUE": -20,
+                    "MAX_VALUE": 50,
+                    "MAX_STEP": 0.25
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "greenforge/uuid/utility9/airtemperature",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "celsius",
+                    "TYPE": "float",
+                    "MIN_VALUE": -40,
+                    "MAX_VALUE": 85,
                     "MAX_STEP": 1
                 }
             ]
         },
         {
             "TYPE": "single",
-            "PREFIX": "Utility_1/Fan_1/Rotation",
+            "PREFIX": "greenforge/uuid/utility9/humidity",
             "TIME_INTERVAL": 1,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
-                    "NAME": "hPa",
+                    "NAME": "relative humidity",
+                    "TYPE": "int",
+                    "MIN_VALUE": 0,
+                    "MAX_VALUE": 100,
+                    "MAX_STEP": 3
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "greenforge/uuid/utility9/co2",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "parts per million",
+                    "TYPE": "int",
+                    "MIN_VALUE": 400,
+                    "MAX_VALUE": 2000,
+                    "MAX_STEP": 25
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "greenforge/uuid/utility9/airpressure",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "hecto pascals",
                     "TYPE": "int",
                     "MIN_VALUE": 300,
                     "MAX_VALUE": 1100,
+                    "MAX_STEP": 25
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "greenforge/uuid/utility9/casingtemperature",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.9,
+            "DATA": [
+                {
+                    "NAME": "celsius",
+                    "TYPE": "float",
+                    "MIN_VALUE": -20,
+                    "MAX_VALUE": 50,
+                    "MAX_STEP": 0.25
+                }
+            ]
+        },
+        {
+            "TYPE": "single",
+            "PREFIX": "greenforge/uuid/utility9/solenoidvalve",
+            "TIME_INTERVAL": 1,
+            "RETAIN_PROBABILITY": 0.99,
+            "DATA": [
+                {
+                    "NAME": "enabled",
+                    "TYPE": "bool",
+                    "MIN_VALUE": 0,
+                    "MAX_VALUE": 1,
                     "MAX_STEP": 1
                 }
             ]
         },
         {
             "TYPE": "single",
-            "PREFIX": "Utility_1/Fan_1/Speed",
+            "PREFIX": "greenforge/uuid/utility9/highlevelfloatswitch",
             "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
+            "RETAIN_PROBABILITY": 0.99,
             "DATA": [
                 {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Utility_1/Fan_2/Rotation",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Utility_1/Fan_2/Speed",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Utility_1/Fan_3/Rotation",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Utility_1/Fan_3/Speed",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Utility_1/Light/1",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Utility_1/Light/2",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Utility_1/Light/3",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Utility_1/Light/4",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Utility_1/Light/5",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Utility_2/Light/1",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Utility_2/Light/2",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Utility_2/Light/3",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Utility_2/Light/4",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Utility_2/Light/5",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Utility_1/SolenoidValve",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Lights/PPFD",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Lights/DLI",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/TankLevel_1",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/PH_1",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/EC_1",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/Temperature_1",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/GlobeValve/Position",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/InletValve/Position",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/OutletValve/Position",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/InletFilter",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/OutletFiler",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/DissolvedOxygen",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/OxidationReductionPotential",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/FlowSensor",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/Dosing_1",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "/Nutrients_1/DuctFan",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "/Nutrients_1/AirPump",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/InletValve",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/OutletValve",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/GlobeValve",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
-                    "MAX_STEP": 1
-                }
-            ]
-        },
-        {
-            "TYPE": "single",
-            "PREFIX": "Nutrients_1/globe/Flow",
-            "TIME_INTERVAL": 1,
-            "RETAIN_PROBABILITY": 0.9,
-            "DATA": [
-                {
-                    "NAME": "hPa",
-                    "TYPE": "int",
-                    "MIN_VALUE": 300,
-                    "MAX_VALUE": 1100,
+                    "NAME": "enabled",
+                    "TYPE": "bool",
+                    "MIN_VALUE": 0,
+                    "MAX_VALUE": 1,
                     "MAX_STEP": 1
                 }
             ]
