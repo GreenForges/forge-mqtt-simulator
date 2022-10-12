@@ -5,7 +5,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility1/airtemperature",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 3,
             "RETAIN_PROBABILITY": 0.85,
             "DATA": [
                 {
@@ -20,7 +20,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility1/humidity",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 10,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -35,7 +35,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility1/co2",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 15,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -50,7 +50,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility1/airpressure",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 5,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -65,7 +65,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility1/casingtemperature",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 3,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -80,7 +80,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility3/airtemperature",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 5,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -95,7 +95,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility3/humidity",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 3,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -110,7 +110,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility3/co2",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 2,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -125,7 +125,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility3/airpressure",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 10,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -140,7 +140,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility3/casingtemperature",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 13,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -155,7 +155,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility6/airtemperature",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 12,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -170,7 +170,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility6/humidity",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 16,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -185,7 +185,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility6/co2",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 11,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -200,7 +200,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility6/airpressure",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 10,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -215,7 +215,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility6/casingtemperature",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 18,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -230,7 +230,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility9/airtemperature",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 19,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -245,7 +245,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility9/humidity",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 20,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -260,7 +260,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility9/co2",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 2,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -275,7 +275,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility9/airpressure",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 3,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -290,7 +290,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility9/casingtemperature",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 10,
             "RETAIN_PROBABILITY": 0.9,
             "DATA": [
                 {
@@ -305,7 +305,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility9/solenoidvalve",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 3,
             "RETAIN_PROBABILITY": 0.99,
             "DATA": [
                 {
@@ -320,7 +320,7 @@
         {
             "TYPE": "single",
             "PREFIX": "greenforge/uuid/utility9/highlevelfloatswitch",
-            "TIME_INTERVAL": 1,
+            "TIME_INTERVAL": 30,
             "RETAIN_PROBABILITY": 0.99,
             "DATA": [
                 {
