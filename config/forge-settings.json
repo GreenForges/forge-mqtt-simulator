@@ -310,7 +310,7 @@
             "DATA": [
                 {
                     "NAME": "enabled",
-                    "TYPE": "bool",
+                    "TYPE": "int",
                     "MIN_VALUE": 0,
                     "MAX_VALUE": 1,
                     "MAX_STEP": 1
@@ -325,7 +325,7 @@
             "DATA": [
                 {
                     "NAME": "enabled",
-                    "TYPE": "bool",
+                    "TYPE": "int",
                     "MIN_VALUE": 0,
                     "MAX_VALUE": 1,
                     "MAX_STEP": 1
